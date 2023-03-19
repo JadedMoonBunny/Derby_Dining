@@ -32,3 +32,15 @@ cross.addEventListener('click', function(){
     cross.style.display = 'none';
     headerbar.style.right = '-100%';
 })
+
+/* Count down app*/
+today=new Date();
+var kyderby=new Date(today.getFullYear(), 4, 6);
+if (today.getMonth()==4 && today.getDate()>6) 
+{
+kyderby.setFullYear(kyderby.getFullYear()+1); 
+}  
+var one_day=1000*60*60*24;
+console.log(Math.ceil((kyderby.getTime()-today.getTime())/(one_day))+
+" days left until The KY Derby!");
+

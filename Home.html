@@ -119,6 +119,36 @@
                 <img src="Img/anh-nguyen-kcA-c3f_3FE-unsplash.jpg" alt="A salad bowl.">
             </div>
         </div>
+        
+        <h3>
+            Days until the start of the Triple Crown!
+        </h3>
+        <script>
+            let today = new Date();
+              
+            let kyDerby = today.getFullYear();
+              
+            if (today.getMonth() == 4 &&
+                today.getDate() > 6) {
+              
+              kyDerby = kyDerby + 1;
+            }
+
+            let derbyDate = 
+                new Date(kyDerby, 4, 6);
+              
+            let dayMilliseconds =
+                1000 * 60 * 60 * 24;
+              
+            let remainingDays = Math.ceil(
+              (derbyDate.getTime() - today.getTime()) /
+              (dayMilliseconds)
+            );
+              
+            document.write("There are " + remainingDays +
+                           " days remaining until the Kentucky Derby!");
+        </script>
+
     </div>
 
     <script src="app.js"></script>

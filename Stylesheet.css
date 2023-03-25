@@ -103,7 +103,7 @@
     width: 100%;
 }
 
-/* Mefia Queries */
+/* Media Queries */
 @media(min-width: 576px){
     .navbar-collapse{
         position: fixed;

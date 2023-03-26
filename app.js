@@ -44,17 +44,3 @@ $(document).ready(function(){
     });
 
 });
-
-
-const options = {
-	method: 'GET',
-	headers: {
-		'X-RapidAPI-Key': '0ac75d47d6msh57b6a84a1d00a40p10affejsn7269f247459d',
-		'X-RapidAPI-Host': 'horse-racing.p.rapidapi.com'
-	}
-};
-
-fetch('https://horse-racing.p.rapidapi.com/query-races', options)
-	.then(response => response.json())
-	.then(response => console.log(response))
-	.catch(err => console.error(err));

@@ -1,16 +1,125 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport"content="width=device-width, initial-scale=1.0">
-    <title>Derby Dining | Book a Table</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="Stylesheet" href="global.css">
-    <link rel="Stylesheet" href="Stylesheet.css">
-</head>
-<body>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Derby Dining | Book a Table</title>
+        <link rel = "stylesheet" href = "stylesheet.css">
+    </head>
+    <body>
+        <!--header-->
+        <header>
+            <!--banner-->
+            <section class = "banner">
+                <ul class = "banner-slider">
+                    <li class = "banner-item active-banner">
+                        <div class = "container">
+                            <h1>Sip on</h1>
+                            <p class = "text">fresh Mint Juleps</p>
+                            <button type = "button">sip now</button>
+                        </div>
+                    </li>
+                    <li class = "banner-item">
+                        <div class = "container">
+                            <h1>Enjoy the "Greatest Two Minutes" in Sports</h1>
+                            <p class = "text">with our delicious cuisine</p>
+                            <button type = "button">Book Now</button>
+                        </div>
+                    </li>
+                    <li class = "banner-item">
+                        <div class = "container">
+                            <h1>Everything made fresh</h1>
+                            <p class = "text">unlike some places</p>
+                            <button type = "button">order now</button>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+            <!--End of the Banner-->
 
+        <!--Navbar-->
+            <nav class = "navbar">
+                <div class = "container">
+                    <div class = "brand-and-toggler">
+                        <a href="home.html" class = "navbar-brand">
+                            <h2>Derby Dining</h2>
+                        </a>
+                        <button type = "button" id = "navbar-toggler">
+                            <i class = "fas fa bars"></i>
+                        </button>
+                    </div>
+                    <div class = "navbar-collapse">
+                        <ul class = "navbar-nav">
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="menu.html">Menu</a>
+                            </li>
+                            <li>
+                                <a href="table.html">Book A Table</a>
+                            </li>
+                            <li>
+                                <a href="login.html">Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--End of the navbar-->
+        </header>
+ 
+        <h2>BOOK YOUR TABLE NOW</h2>
+        <div class = "card-container">
+            </div>
+
+            <div class = "card-content">
+                <h3>Reservation</h3>
+                <form>
+                    <div class = "form-row">
+                        <select name = "days">
+                            <option value = "day-select">Select Day</option>
+                            <option value = "sunday">Sunday</option>
+                            <option value = "monday">Monday</option>
+                            <option value = "tuesday">Tuesday</option>
+                            <option value = "wednesday">Wednesday</option>
+                            <option value = "thursday">Thursday</option>
+                            <option value = "friday">Friday</option>
+                            <option value = "saturday">Saturday</option>
+                        </select>
+
+                        <select name = "hours">
+                            <option value = "hour-select">Select Hour</option>
+                            <option value = "10">10: 00</option>
+                            <option value = "10">12: 00</option>
+                            <option value = "10">14: 00</option>
+                            <option value = "10">16: 00</option>
+                            <option value = "10">18: 00</option>
+                            <option value = "10">20: 00</option>
+                            <option value = "10">22: 00</option>
+                        </select>
+                    </div>
+
+                    <div class = "form-row">
+                        <input type = "text" placeholder="Full Name">
+                        <input type = "text" placeholder="Phone Number">
+                    </div>
+
+                    <div class = "form-row">
+                        <input type = "number" placeholder="How Many Persons?" min = "1">
+                        <input type = "submit" value = "BOOK TABLE">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
     
+  <footer>
+    <p class = "text">Copyright &copy; Derby Dining 2023.</p>
+  </footer>
+  <!-- end of footer -->
+  <script src="app.js"></script>
 </body>
 </html>

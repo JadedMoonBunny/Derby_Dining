@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Derby Dining | Sign Up</title>
+        <link rel = "stylesheet" href = "stylesheet.css">
+    </head>
+    <body>
+        <!--header-->
+        <header>
+
+        <!--Navbar-->
+            <nav class = "navbar">
+                <div class = "container">
+                    <div class = "brand-and-toggler">
+                        <a href="home.html" class = "navbar-brand">
+                            <h2>Derby Dining</h2>
+                        </a>
+                        <button type = "button" id = "navbar-toggler">
+                            <i class = "fas fa bars"></i>
+                        </button>
+                    </div>
+                    <div class = "navbar-collapse">
+                        <ul class = "navbar-nav">
+                            <li>
+                                <a href="home.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="menu.html">Menu</a>
+                            </li>
+                            <li>
+                                <a href="table.html">Book A Table</a>
+                            </li>
+                            <li>
+                                <a href="login.html">Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!--End of the navbar-->
+        </header>
+        <!--End of the header-->
+
+        <div class="container">
+            <form id="form" action="/">
+                <h1>Registration</h1>
+                <div class="input-control">
+                    <label for="username">Username</label>
+                    <input id="username" name="username" type="text">
+                    <div class="error"></div>
+                </div>
+                    <div class="input-control">
+                        <label for ="email">Email</label>
+                        <input id="email" name="username" type="text">
+                        <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="password">Password</label>
+                    <input id="password" name="password" type="text">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="password">Password again</label>
+                    <input id="password2" name="password2" type="password">
+                    <div class="error"></div>
+                </div>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+    <footer>
+        <p class = "text">Copyright &copy; Derby Dining 2023.</p>
+      </footer>
+      <!-- end of footer -->
+      <script src="app.js"></script>
+    </body>
+</html>

@@ -2,7 +2,7 @@
 :root{
     --nero: #252525;
     --dimGray: #666;
-    --max-red: #D62828;
+    --max-red: #2b7c3e;
     --snow: #fafafa;
     --Libre: 'Libre Franklin', sans-serif;
     --Kaushan: 'Kaushan Script';
@@ -97,14 +97,9 @@ h1, h2, h3, h4, h5, h6{
     to{opacity: 1;}
 }
 .banner-item:nth-child(1){
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), center/cover no-repeat fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Img/taylor-sondgeroth-f2flp9x51QI-unsplash.jpg) center/cover no-repeat fixed;
 }
-.banner-item:nth-child(2){
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), center/cover no-repeat fixed;
-}
-.banner-item:nth-child(3){
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), center/cover no-repeat fixed;
-}
+
 .banner-item h1{
     font-size: 2.5rem;
     font-family: var(--Kaushan);
@@ -201,6 +196,8 @@ h1, h2, h3, h4, h5, h6{
     display: none;
 }
 
+
+
 /* menu */
 .menu-row{
     margin: 2rem 0;
@@ -232,7 +229,23 @@ h1, h2, h3, h4, h5, h6{
     background: var(--nero);
 }
 
-/*book a table form*/
+.card-container{
+    display: grid;
+    grid-template-columns: 420px 420px;
+}
+
+
+.card-content{
+    background: #fff;
+    height: 330px;
+}
+.card-content h3{
+    text-align: center;
+    color: #000;
+    padding: 25px 0 10px 0;
+    font-size: 26px;
+    font-weight: 500;
+}
 .form-row{
     display: flex;
     width: 90%;
@@ -255,7 +268,7 @@ form input[type = text], form input[type = number], form input::placeholder, sel
 }
 form input[type = submit]{
     color: #fff;
-    background: #f2745f;
+    background: #2b7c3e;
     padding: 12px 0;
     border-radius: 4px;
     cursor: pointer;
@@ -264,62 +277,6 @@ form input[type = submit]:hover{
     opacity: 0.9;
 }
 
-/*Sign up form*/
-#form {
-    width: 300px;
-    margin: 20vh auto 0 auto;
-    padding: 20px;
-    background-color: whitesmoke;
-    border-radius: 4px;
-    font-size: 12px;
-}
-
-#form h1 {
-    color: #0f2027;
-    text-align: center;
-}
-
-#form button {
-    padding: 10px;
-    margin-top: 10px;
-    width: 100%;
-    color: white;
-    background-color: rgb(41, 57, 194);
-    border: none;
-    border-radius: 4px;
-}
-
-.input-control {
-    display: flex;
-    flex-direction: column;
-}
-
-.input-control input {
-    border: 2px solid #f0f0f0;
-	border-radius: 4px;
-	display: block;
-	font-size: 12px;
-	padding: 10px;
-	width: 100%;
-}
-
-.input-control input:focus {
-    outline: 0;
-}
-
-.input-control.success input {
-    border-color: #09c372;
-}
-
-.input-control.error input {
-    border-color: #ff3860;
-}
-
-.input-control .error {
-    color: #ff3860;
-    font-size: 9px;
-    height: 13px;
-}
 
 /* footer */
 footer{
@@ -350,8 +307,60 @@ footer{
         align-items: center;
         column-gap: 2rem;
     }
+    /* navbar */
+    .navbar .container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+    #navbar-toggler{
+    display: none;
+}
+    .navbar-collapse{
+    flex: 1 0 auto;
+    display: block!important;
+}
+    .navbar-nav{
+    display: flex!important;
+    justify-content: flex-end;
+}
+    .navbar-nav li{
+    margin: 0 1.2rem;
+    padding: 0;
+}
+    
 }
 
+@media screen and (min-width: 768px){
+    /* banner */
+    .container{
+        width: 90vw;
+    }
+    .banner-item h1{
+        font-size: 6rem;
+    }
+    /* navbar */
+    .navbar .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    #navbar-toggler{
+        display: none;
+    }
+    .navbar-collapse{
+        flex: 1 0 auto;
+        display: block!important;
+    }
+    .navbar-nav{
+        display: flex!important;
+        justify-content: flex-end;
+    }
+    .navbar-nav li{
+        margin: 0 1.2rem;
+        padding: 0;
+}
+}
 
 @media screen and (min-width: 992px){
     /* banner */
@@ -381,15 +390,7 @@ footer{
     .navbar-nav li{
         margin: 0 1.2rem;
         padding: 0;
-    }
-    /* services */
-    .service-row{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        column-gap: 2rem;
-    }
-    .service-item p{
-        width: 100%;
+
     }
     /* menu */
     .menu-row{
@@ -397,18 +398,36 @@ footer{
         grid-template-columns: repeat(2, 1fr);
         column-gap: 2rem;
     }
-    .card-container{
-        grid-template-columns: 100%;
-        width: 100vw;
-    }
-    .card-img{
-        height: 330px;
-    }
 }
 
 @media screen and (min-width: 1200px){
     /* banner */
     .container{
         width: 86%;
+    }
+    /* about */
+    .about-row{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        align-items: center;
+        column-gap: 2rem;
+    }
+    .about-col-1,
+    .about-col-3{
+        display: block;
+    }
+    .about-row > div{
+        margin: 0;
+    }
+    
+}
+
+@media(max-width: 992px){
+    .card-container{
+        grid-template-columns: 100%;
+        width: 100vw;
+    }
+    .card-img{
+        height: 330px;
     }
 }

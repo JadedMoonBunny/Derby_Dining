@@ -9,122 +9,129 @@
         <link rel = "stylesheet" href = "stylesheet.css">
     </head>
     <body>
-        <!--header-->
-        <header>
-            <!--banner-->
-            <section class = "banner">
-                <ul class = "banner-slider">
-                    <li class = "banner-item active-banner">
-                        <div class = "container">
-                            <h1>Sip on</h1>
-                            <p class = "text">fresh Mint Juleps</p>
-                            <button type = "button">sip now</button>
-                        </div>
-                    </li>
-                    <li class = "banner-item">
-                        <div class = "container">
-                            <h1>Enjoy the "Greatest Two Minutes" in Sports</h1>
-                            <p class = "text">with our delicious cuisine</p>
-                            <button type = "button">Book Now</button>
-                        </div>
-                    </li>
-                    <li class = "banner-item">
-                        <div class = "container">
-                            <h1>Everything made fresh</h1>
-                            <p class = "text">unlike some places</p>
-                            <button type = "button">order now</button>
-                        </div>
-                    </li>
-                </ul>
-            </section>
-            <!--End of the Banner-->
 
-        <!--Navbar-->
-            <nav class = "navbar">
-                <div class = "container">
-                    <div class = "brand-and-toggler">
-                        <a href="home.html" class = "navbar-brand">
-                            <h2>Derby Dining</h2>
-                        </a>
-                        <button type = "button" id = "navbar-toggler">
-                            <i class = "fas fa bars"></i>
-                        </button>
-                    </div>
-                    <div class = "navbar-collapse">
-                        <ul class = "navbar-nav">
-                            <li>
-                                <a href="home.html">Home</a>
-                            </li>
-                            <li>
-                                <a href="menu.html">Menu</a>
-                            </li>
-                            <li>
-                                <a href="table.html">Book A Table</a>
-                            </li>
-                            <li>
-                                <a href="login.html">Sign Up</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-            <!--End of the navbar-->
-        </header>
-        <!--End of the header-->
-
-        <!--Days until Section and Title-->
-        <section class = "padding-y countdown" id = "countdown">
+    <!-- header -->
+    <header>
+      <!-- banner section -->
+      <section class = "banner">
+        <ul class = "banner-slider">
+          <li class = "banner-item active-banner">
             <div class = "container">
-                <div class = "countdown-row">
-                    <div class = "title">
-                    <h2>Days until the Kentucky Derby!</h2>
-                    <div></div>
-        <!--End of the title-->
-                        <p>Join us on race days for special seats and amazing discounts! </p>
-                        <script>
-                            let today = new Date();
-                              
-                            let kyDerby = today.getFullYear();
-                              
-                            if (today.getMonth() == 4 &&
-                                today.getDate() > 6) {
-                              
-                              kyDerby = kyDerby + 1;
-                            }
-                
-                            let derbyDate = 
-                                new Date(kyDerby, 4, 6);
-                              
-                            let dayMilliseconds =
-                                1000 * 60 * 60 * 24;
-                              
-                            let remainingDays = Math.ceil(
-                              (derbyDate.getTime() - today.getTime()) /
-                              (dayMilliseconds)
-                            );
-                              
-                            document.write(" There are " + remainingDays +
-                                           " days remaining until the Kentucky Derby!");
-                        </script>
-                </div>
+              <h1>Enjoy the Kentucky Derby</h1>
+              <p class = "text">with our delicious food!</p>
+              <button type = "button">Book your table</button>
             </div>
-        </section>
-        <!--End of this section-->
+          </li>         
+        </ul>
+      </section>
+      <!-- end of banner section -->
 
-        <!--Api Section-->
-        <section class = "padding-y api" id = "api">
-            <div class = "container">
-                <!--title-->
-                <div class = "title">
-                    <h2>For our UK and Ireland friends!</h2>
-                </div>
-                <!--End of title-->
-                <p>We have displayed racecards for you to keep up to date on your favorite races!</p>
-        <!--End of the Api section-->
+      <!-- navbar -->
+      <nav class = "navbar">
+        <div class = "container">
+          <div class = "brand-and-toggler">
+            <a href = "home" class = "navbar-brand">
+              <h2>Derby Dining</h2>
+            </a>
+            <button type = "button" id = "navbar-toggler">
+              <i class = "fas fa-bars"></i>
+            </button>
+          </div>
+          <div class = "navbar-collapse">
+            <ul class = "navbar-nav">
+              <li>
+                <a href = "home.html">home</a>
+              </li>
+              <li>
+                <a href = "menu.html">menu</a>
+              </li>
+              <li>
+                <a href = "table.html">book a table</a>
+              </li>
+              <li>
+                <a href = "login.html">sign up</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- end of navbar -->
+    </header>
+    <!-- end of header -->
+
+    <!-- about section -->
+    <section class = "padding-y about" id = "about">
+      <div class = "container">
+        <div class = "about-row">
+          <div class = "about-col-1">
+            <img src = "Img/jeff-griffith-PaIDqj8otls-unsplash.jpg" alt = "">
+          </div>
+          <div class = "about-col-2">
+            <!-- title -->
+            <div class = "title">
+              <h2>About Derby Dining</h2>
+              <div class = "line center">
+                <div></div>
+                <span><i class = "fas fa-utensils"></i></span>
+                <div></div>
+              </div>
+            </div>
+            <!-- end of title -->
+            <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam iusto aut molestias excepturi, nam est optio id rerum aliquam, deserunt cum incidunt eum quos corporis error magni et necessitatibus enim?</p>
+            <p class = "text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, consectetur dolore minus cupiditate quibusdam cumque libero iusto dolorum, facere, nostrum provident repellendus quos? Nisi, veniam rem molestias maiores saepe unde, error dignissimos ipsam laboriosam cupiditate fugit recusandae? Delectus veniam ducimus assumenda consequatur? Nostrum numquam error architecto esse quos assumenda asperiores.</p>
+          </div>
+          <div class = "about-col-3">
+            <img src = "Img/julia-joppien-IojCPQ2rWe8-unsplash.jpg" alt = "">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end of about section -->
+
+   <!--Days until Section and Title-->
+   <section class = "padding-y countdown" id = "countdown">
+    <div class = "container">
+        <div class = "countdown-row">
+            <div class = "title">
+            <h2>Days until the Kentucky Derby!</h2>
+            <div></div>
+<!--End of the title-->
+                <p>Join us on race days for special seats and amazing discounts! </p>
+                <script>
+                    let today = new Date();
+                      
+                    let kyDerby = today.getFullYear();
+                      
+                    if (today.getMonth() == 4 &&
+                        today.getDate() > 6) {
+                      
+                      kyDerby = kyDerby + 1;
+                    }
+        
+                    let derbyDate = 
+                        new Date(kyDerby, 4, 6);
+                      
+                    let dayMilliseconds =
+                        1000 * 60 * 60 * 24;
+                      
+                    let remainingDays = Math.ceil(
+                      (derbyDate.getTime() - today.getTime()) /
+                      (dayMilliseconds)
+                    );
+                      
+                    document.write(" There are " + remainingDays +
+                                   " days remaining until the Kentucky Derby!");
+                </script>
+        </div>
+    </div>
+</section>
+<!--End of this section-->
+   
+    <!-- footer -->
     <footer>
-        <p class = "text">Copyright &copy; Derby Dining 2023.</p>
-      </footer>
-      <!-- end of footer -->
-      <script src="app.js"></script>
-    </body>
+      <p class = "text">Copyright &copy; Derby Dining 2023.</p>
+    </footer>
+    <!-- end of footer -->
+    <script src="app.js"></script>
+  </body>
 </html>

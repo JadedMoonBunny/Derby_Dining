@@ -1,7 +1,7 @@
 # Derby_Dining
 ## A Code KY Project
 
-Hi everyone, this project for Code Kentucky/Louisville its a resturant website based around Horse Racing - specifically the Kentucky Derby.
+Hi everyone, this is a project for Code Kentucky/Louisville its a resturant website based around Horse Racing - specifically the Kentucky Derby.
 
 Features
 

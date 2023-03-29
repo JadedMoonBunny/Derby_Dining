@@ -3,7 +3,7 @@
 
 Hi everyone, this project for Code Kentucky/Louisville its a resturant website based around Horse Racing - specifically the Kentucky Derby.
 
-###Features
+Features
 
 - My first feature is to calculate and display the data of how many days until an event. In the case of the website it tells how many days until the KY Derby. This feature is on the home page.
 

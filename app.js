@@ -1,51 +1,4 @@
-$(document).ready(function(){
-    // banner image change
-    let bannerCount = 0;
-    setInterval(function(){
-        hideAllBanner();
-        changeBannerCount();
-        changeBanner();
-    }, 8000);
-
-    function changeBanner(){
-        $('.banner-item').each(function(idx){
-            if(bannerCount == idx){
-                $(this).addClass('active-banner');
-            }
-        });
-    }
-
-    function hideAllBanner(){
-        $('.banner-item').each(function(idx){
-            $(this).removeClass('active-banner');
-        });
-    }
-
-    function changeBannerCount(){
-        bannerCount++;
-        if(bannerCount >= $('.banner-item').length){
-            bannerCount = 0;
-        }
-    }
-
-    // navigation bar toggle
-    $('#navbar-toggler').click(function(){
-        $('.navbar-collapse').slideToggle(600);
-    });
-
-    // fixed navbar 
-    $(window).scroll(function(){
-        let pos = $(window).scrollTop();
-        if(pos >= 800){
-            $('.navbar').addClass('fxd-navbar');
-        } else {
-            $('.navbar').removeClass('fxd-navbar');
-        }
-    });
-
-});
-
-/*Registration Form*/
+    /*Registration Form*/
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const email = document.getElementById('email');
@@ -118,3 +71,55 @@ const validateInputs = () => {
     }
 
 };
+
+/* API */
+fetch("https://www.thecocktaildb.com/api/json/v1/1/random.php")
+  .then((response) => {
+    if (response.ok) {
+      return response.json();
+    } else {
+      throw new Error("NETWORK RESPONSE ERROR");
+    }
+  })
+  .then(data => displayCocktail(data))
+  .catch((error) => console.error("FETCH ERROR:", error));
+
+function displayCocktail(data) {
+
+  const cocktail = data.drinks[0];
+  const cocktailDiv = document.getElementById("cocktail");    
+
+  // cocktail name
+  const cocktailName = cocktail.strDrink;
+  const heading = document.createElement("h1");
+  heading.innerHTML = cocktailName;
+  cocktailDiv.appendChild(heading);
+
+  // cocktail image
+  const cocktailImg = document.createElement("img");
+  cocktailImg.src = cocktail.strDrinkThumb;
+  cocktailDiv.appendChild(cocktailImg);
+
+  // coctail ingredients
+  const cocktailIngredients = document.createElement("ul");
+  cocktailDiv.appendChild(cocktailIngredients);
+
+  const getIngredients = Object.keys(cocktail)
+    .filter(function (ingredient) {
+      return ingredient.indexOf("strIngredient") == 0;
+    })
+    .reduce(function (ingredients, ingredient) {
+      if (cocktail[ingredient] != null) {
+        ingredients[ingredient] = cocktail[ingredient];
+      }
+      return ingredients;
+    }, {});
+
+  for (let key in getIngredients) {
+    let value = getIngredients[key];
+    listItem = document.createElement("li");
+    listItem.innerHTML = value;
+    cocktailIngredients.appendChild(listItem);
+  }
+
+}

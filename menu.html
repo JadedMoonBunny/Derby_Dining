@@ -1,62 +1,67 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Derby Dining | Menu</title>
-        <link rel = "stylesheet" href = "stylesheet.css">
-    </head>
-    <body>
-   <!-- header -->
-   <header>
-    <!-- banner section -->
-    <section class = "banner">
-      <ul class = "banner-slider">
-        <li class = "banner-item active-banner">
-          <div class = "container">
-            <h1>Enjoy the Kentucky Derby</h1>
-            <p class = "text">with our delicious food!</p>
-            <button type = "button">Book your table</button>
-          </div>
-        </li>         
-      </ul>
-    </section>
-    <!-- end of banner section -->
 
-    <!-- navbar -->
-    <nav class = "navbar">
-      <div class = "container">
-        <div class = "brand-and-toggler">
-          <a href = "home.html" class = "navbar-brand">
-            <h2>Derby Dining</h2>
-          </a>
-          <button type = "button" id = "navbar-toggler">
-            <i class = "fas fa-bars"></i>
-          </button>
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+        <meta name="description" content="">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Derby Dining | Menu</title>
+
+        <link rel = "stylesheet" href = "stylesheet.css">
+
+    </head>
+
+    <body>
+
+    <!-- header -->
+    <header>
+      <!-- banner section -->
+      <section class = "banner">
+        <ul class = "banner-slider">
+          <li class = "banner-item active-banner">
+            <div class = "container">
+              <h1>Enjoy the Kentucky Derby</h1>
+              <p class = "text">with our delicious food!</p>
+              <button type = "button">Book your table</button>
+            </div>
+          </li>         
+        </ul>
+      </section>
+      <!-- end of banner section -->
+      
+      <!--Navbar-->
+      <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+          <div class="nav-title">
+            Derby Dining
+          </div>
         </div>
-        <div class = "navbar-collapse">
-          <ul class = "navbar-nav">
-            <li>
-              <a href = "home.html">home</a>
-            </li>
-            <li>
-              <a href = "menu.html">menu</a>
-            </li>
-            <li>
-              <a href = "table.html">book a table</a>
-            </li>
-            <li>
-              <a href = "login.html">sign up</a>
-            </li>
-          </ul>
+        <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        
+        <div class="nav-links">
+          <a href="home.html">Home</a>
+          <a href="menu.html">Menu</a>
+          <a href="drinks.html">Drinks</a>
+          <a href="table.html">Book a Table</a>
+          <a href="login.html">Sign Up</a>
         </div>
       </div>
-    </nav>
-    <!-- end of navbar -->
-  </header>
-  <!-- end of header -->
+            </header>
+      <!--End of Navbar-->
  
  <!-- menu section -->
  <div class = "padding-y menu" id = "menu">
@@ -162,11 +167,7 @@
   </div>
   <!-- end of menu section -->
 
-  <div class = "title">
-    <h2>Drinks</h2>
-      <div></div>
-      <p>We have all kinds of drinks! Can't think of what you want? Take a look here!</p>
-  
+
   <footer>
     <p class = "text">Copyright &copy; Derby Dining 2023.</p>
   </footer>

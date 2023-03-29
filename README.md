@@ -12,3 +12,5 @@ Features
 - My third feature is to validate user input and prevent invalid input. This feature can be tested on the Sign Up page on the website.
 
 - My fourth feature is to implement modern interactive UI features. This can be seen on the Book a Table page. It features a dropdown box with day of the week selection and time, the rerver's name and phone number, and number of persons which the value can be typed or can be increased or decreased with arrows in the box.
+
+To get the most out of the website, please download the code and open the files in Visual Studio Code and open the pages with the extension Live Server.
